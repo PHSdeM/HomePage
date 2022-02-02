@@ -1,15 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: 'Mukta', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(72deg, #1b1b1b 35%, #948787, #2876db 90%);
+                                /* Background Image */
+
+    background: linear-gradient(rgba(17,17,17,0.8), rgba(20,20,20,1)), url(../img/cabe_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(22,22,22,0.25);
+}
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.menu-content .list-items {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-items a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transform: 2ms ease-in ;
+    position: relative;
+}
+
+.menu-content .list-items a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(251, 255, 0);
+    transition:  all 1.5s ease;
+}
+
+.menu-content .list-items a:hover:before {
+    width: 100%;
 }
 
 .content{
-    height: 500px;
-    width: 850px;
+    height: 350px;
+    width: 700px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
@@ -26,8 +106,8 @@ body {
 
 .navigation {
     position: absolute;
-    bottom: 35px;
-    left: 690px;
+    bottom: 105px;
+    left: 610px;
     display: flex;
 
 }
