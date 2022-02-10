@@ -17,7 +17,7 @@
             <nav class="header-menu">
                 <ul class="list-items">
                     <li><a href="/index.html"> Home </a></li>
-                    <li><a href="./assets/pages/services.html"> Services </a></li>
+                    <li><a href="#"> Services </a></li>
                     <li><a href="#"> About </a></li>
                     <li><a href="#"> Contacts</a></li>
                     <li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
@@ -72,6 +72,51 @@
                 <label class="bar" for="slide5"></label>
 
             </div>
+
+        <article>
+            <div id="card-navigation">
+                
+
+
+            </div>
+
+        <script>
+            const items = [{
+                id: 0,
+                nome: 'Nome do corte',
+                img: '../img/cuts/cuts5.jpg'
+            },
+            {
+                id: 1,
+                nome: 'Nome do corte 2',
+                img: '../img/cuts/cuts5.jpg'
+            },
+            {
+                id: 2,
+                nome: 'Nome do corte 3',
+                img: '../img/cuts/cuts5.jpg'
+            },
+            ]
+
+            inicializarCard = () => {
+                var containerCortes = document.getElementById('card-navigation');
+
+                items.map((val) => {
+                    containerCortes.innerHTML += `
+                    
+                    <div class = "cards">
+                        <img src = "`+val.img+`"/>
+                        <p> `+val.nome+` </p>
+                    </div>
+                    
+                    `;
+                })
+            }
+
+            inicializarCard();
+        </script>
+
+        </article>
     </main>
    
 </body>

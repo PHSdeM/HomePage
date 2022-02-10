@@ -8,7 +8,7 @@
 
 html {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     font-size: 14px;
     color: rgb(255, 255, 255);
     font-family: 'Mukta', sans-serif;
@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
                                 /* Background Image */
 
@@ -40,6 +40,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 60px;
+    color: #474747;
 }
 
 
@@ -93,7 +95,7 @@ main{
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75)
@@ -106,7 +108,7 @@ main{
 
 .navigation {
     position: absolute;
-    bottom: 105px;
+    bottom: 170px;
     left: 610px;
     display: flex;
 
@@ -161,3 +163,39 @@ input{
     margin-left: -80%;
 }
 
+
+/* Cards */ 
+
+#card-navigation{
+    max-width: 900px;
+    position: relative;
+    margin:  0 auto;
+    padding: 0 2%;
+    display: flex;
+    top: 250px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Mukta', sans-serif;
+}
+
+.cards{
+    width: 33,3%;
+    padding: 0 20px;
+    
+    top:0;
+    transition: all .2s ease-in-out
+}
+
+.cards:hover{
+    color: black;
+
+    top:-4px;
+    box-shadow:0 4px 4px rgba(172, 169, 169, 0.685);
+    background-color: rgba(17, 16, 16, 0.753);
+    transition: all .2s ease-in-out
+}

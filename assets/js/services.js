@@ -9,4 +9,4 @@ setInterval( function(){
         count = 1;
     }
     
-}, 3000 );
+}, 3000 ); 
